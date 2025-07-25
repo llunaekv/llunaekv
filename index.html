@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>llunae.kv - Tu Asistente personal preferida 😉</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navegación superior con logo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/llunaelogo.png" alt="llunae logo" class="logo-image">
+                <h1 class="logo-text">llunae.kv</h1>
+            </div>
+            <nav class="nav">
+                <a href="#Comienzo">Comienzo</a>
+                <a href="#galeria">Galería</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección del Comienzo -->
+    <section id="Comienzo" class="hero">
+        <div class="contenedor">
+            <h1>¡Hola! Yo Soy llunae, te invito a conocerme 🤖</h1>
+            <p>Tu asistente personal inteligente 😉</p>
+            
+            <!-- Imagen principal del asistente -->
+            <div class="hero-image">
+                <img src="images/lunae2.png" alt="llunae asistente personal" class="main-robot-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de información -->
+    <section class="info-section">
+        <div class="contenedor">
+            <h2>¿Qué puedo hacer por ti?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Asistencia Visual 👀</h3>
+                    <p>Apoyo para personas con discapacidad visual ¡Te hablo a través de un micrófono! 😊🎤</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-ear-listen"></i>
+                    <h3>Asistencia Auditiva 🔊</h3>
+                    <p>Comunicación visual a través de la app (Próximamente) para personas con discapacidad auditiva.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Inteligencia Emocional</h3>
+                    <p>Comprendo tu estado anímico 😢🥹</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Conexión Global 🌐</h3>
+                    <p>¡Acceso a información actualizada!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="gallery-section">
+        <div class="contenedor">
+            <h2>Conoce a llunae</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/lunae2.png" alt="Diseño 3D armado">
+                    <h3>Vista Frontal</h3>
+                    <p>Mi expresivo diseño frontal</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/lunae1.png" alt="Vista trasera">
+                    <h3>Prototipo (no final) 👀</h3>
+                    <p>Mi construcción en desarrollo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="contenedor">
+            <h2>¿Dudas? ¿Quieres hablarnos?</h2>
+            <h3>¡Háblanos por aquí!</h3>
+            <div class="contact-buttons">
+                <button onclick="showEmail()">
+                    <i class="fas fa-envelope"></i>
+                    ¡Nuestro Email!
+                </button>
+                <button onclick="showInstagram()">
+                    <i class="fab fa-instagram"></i>
+                    ¡Nuestro Instagram!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
