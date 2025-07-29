@@ -12,21 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Funciones de contacto
-function showEmail() {
-    alert('¡Contáctanos en: kvllunae@gmail.com\n\n¡Escríbenos y te responderemos pronto! 😊');
-}
 
-function showInstagram() {
-    alert('¡Síguenos en: @llunae.kv\n\n¡Síguenos para las últimas actualizaciones! 📱\n\nLink: https://www.instagram.com/llunae.kv?igsh=MXIzM3hxN29xczZrdQ==');
-    // Abrir Instagram automáticamente
-    window.open('https://www.instagram.com/llunae.kv?igsh=MXIzM3hxN29xczZrdQ==', '_blank');
-}
-
-function showTikTok() {
-    alert('¡Ve nuestros entretenidos tiktoks: @llunae.kv\n\n¡Visualiza nuestros entretenidos e informativos videos! 👀\n\nLink: https://www.tiktok.com/@llunae.kv?_t=ZM-8yKGZTz2KKm&_r=1');
-    window.open('https://www.tiktok.com/@llunae.kv?_t=ZM-8yKGZTz2KKm&_r=1', '_blank');
-}
 
 // Animaciones al hacer scroll - Versión mejorada
 const observerOptions = {
