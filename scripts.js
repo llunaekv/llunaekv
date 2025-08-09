@@ -2,7 +2,6 @@ function analizarEmocion() {
   const mensaje = document.getElementById("userInput").value;
   const respuesta = document.getElementById("respuestaIA");
 
-  // Mostrar un mensaje de "cargando" mientras espera la respuesta
   respuesta.innerHTML = "Pensando...";
 
   fetch('https://llunaekv.pythonanywhere.com/ia', {
@@ -14,7 +13,6 @@ function analizarEmocion() {
   })
   .then(res => res.json())
   .then(data => {
-    // Muestra la respuesta del servidor Flask
     respuesta.innerHTML = data.respuesta;
   })
   .catch(error => {
