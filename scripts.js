@@ -11,12 +11,23 @@ function analizarEmocion() {
     },
     body: JSON.stringify({ mensaje: mensaje })
   })
-  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) {
+      respuesta.innerHTML = "Error de servidor: " + res.status;
+      throw new Error("Error de servidor: " + res.status);
+    }
+    return res.json();
+  })
   .then(data => {
-    respuesta.innerHTML = data.respuesta;
+    // Cambia 'respuesta' por el campo correcto de tu respuesta Flask si es necesario
+    if (data.respuesta) {
+      respuesta.innerHTML = data.respuesta;
+    } else {
+      respuesta.innerHTML = "No se recibió respuesta de la IA";
+    }
   })
   .catch(error => {
-    respuesta.innerHTML = "Hubo un error al conectar con el servidor 😢";
+    respuesta.innerHTML = "Hubo un error al conectar con el servidor 😢<br>" + error;
     console.error(error);
   });
 }
