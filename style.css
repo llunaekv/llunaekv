@@ -35,7 +35,6 @@
 body {
     background: linear-gradient(135deg, var(--purple-main), var(--purple-light));
     color: var(--white);
-    font-family: 'Caveat', cursive;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -455,4 +454,5 @@ button:focus, .nav a:focus {
 /* Navegación suave */
 .info-section, .gallery-section, .contact-section {
     scroll-margin-top: 100px;
+
 }
